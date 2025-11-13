@@ -1,0 +1,26 @@
+html, body {
+  box-sizing: border-box;
+  background-color: #f9f5f1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #113743;
+  height: 100%;
+  width: 100%;
+}
+a, a:hover {
+  text-decoration: none;
+  color: #5b4b4b;
+}
+
+.lichtgrijs {
+  color: #A9A9A9;
+}
+
+.Rood {
+  color: #dd0b0b;
+}
+
+span {
+  color: red;
+}
