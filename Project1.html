@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project1-Webwiz</title>
+  <!-- resetten van browsers -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JavaScript-bestanden  -->
+  <script src="js/script.js" defer></script>
+
+</head>
+<body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar  bg-white shadow-sm container-fluid">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo.png" alt="Logo" width="75" height="75" class="me-2">
+        <span class="fw-bold Rood">The internet Man</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Over mij">Over mij</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfollio.html">My Portfolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projecten
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-end" href="Project1.html">Webwiz</a></li>
+              <li><a class="dropdown-item text-end" href="Project2.html">Project 2</a></li>
+              <li><a class="dropdown-item text-end" href="Project3.html">Project 3</a></li>
+              <li><a class="dropdown-item text-end" href="Project4.html">Project 4</a></li>
+              <li><a class="dropdown-item text-end" href="Project5.html">Project 5</a></li>
+              <li><a class="dropdown-item text-end" href="Project6.html">Project 6</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header class="row m-5">
+    <h1 class="col display-3 fw-bold Rood text-center">Webwiz</h1>
+  </header>
+
+<div class="container">
+    <div class="row">
+        <main class="col-md-9">
+        <section id="Project1" class="row">
+          <article id="Opdracht">
+            <h2 class="fw-bold text-md-start text-center">Opdracht</h2>
+            <h3 class="fw-bold text-md-start text-center">Situatieschets:</h3>
+            <p>De firma Webwiz is een groeiend bedrijf en gaf aan een firma de opdracht om voor hun
+            nieuwbouw een netwerk uit te tekenen.</p>
+            <p>Volgende instructies werden meegegeven:</p>
+            <li>
+              Het kantoor bestaat uit een gelijkvloers en een eerste verdieping.
+            </li>
+            <li>
+              De hoogte tussen twee verdiepingen is 4 meter.
+            </li>
+            <li>
+              Er werken 24 mensen die elk een eigen bureau / werkplek hebben.
+            </li>
+            <li>
+              Ze hebben voor hun werkzaamheden 2 on prem servers nodig waar enkel gemachtigde mensen fysiek
+              toegang tot mogen hebben.
+            </li>
+            <li>
+              Deze firma zal over 20 desktops en 10 laptops beschikken. 
+            </li>
+            <li>Zes van deze laptops zijn flexi laptops die kunnen uitgeleend worden.</li>
+            <li>Alle laptops moeten draadloos kunnen werken.</li>
+            <li>Op elke werkplek wordt er een VoIP telefoon (= netwerktelefoon) voorzien.</li>
+            <li>De werkplekken zijn verdeeld over 6 kantoren binnen het gebouw.</li>
+            <li>In elk kantoor staat ook een MFP.</li>
+            <li>Alle end-devices in het netwerk zijn single homed.</li>
+          </article>
+
+          <article id="Bekabelingsplan">
+            <h3 class="fw-bold text-md-start text-center pt-5">Bekabelingsplan:</h3>
+            <figure>
+              <img src="assets/images/WebwizPlategrond.png" class="img-fluid" alt="foto plategrond" title="plategrond gebouw">
+              <figcaption class="h6 small mt-2">&copy; plategrond gebouw</figcaption>
+            </figure>
+            <p>We ontworpen ons grondplan in Cisco Packet Tracer. We ontworpen deze zodat alle eisen van de klant voldaan worden. </p>
+          </article>
+          
+            <h3 id="Rack Layout" class="fw-bold text-md-start text-center pt-5">Rack Layout:</h3>
+            <article class="col-lg-6 mb-3 p-3">
+              <figure>
+              <img src="assets/images/Webwiz_Rack1.png" class="img-fluid" alt="foto rack" title="Rack">
+              <figcaption class="h6 small mt-2">&copy; Rack packet tracer</figcaption>
+            </figure>
+            </article>
+            <article class="col-lg-6 mb-3 p-3">
+              <figure>
+              <img src="assets/images/Webwiz_Rack-layout.png" class="img-fluid" alt="foto rack layout" title="Rack layout">
+              <figcaption class="h6 small mt-2">&copy; Rack layout</figcaption>
+            </figure>
+            </article>
+          <p>De rack in packet tracer + PDF document met het schema van de rack inrichting plaatsing apparatuur in het rack + hoeveel U elk toestel in
+          beslag neemt, verbindingen tussen actieve componenten in het rack met vermelding van poortidentificaties.</p>
+
+          <article id="Patch plan">
+            <h3 class="fw-bold text-md-start text-center pt-5">Patch plan:</h3>
+            <figure>
+              <img src="assets/images/Webwiz_patchplan1-40.png" class="img-fluid" alt="foto Patch plan" title="Patch plan">
+            </figure>
+            <figure>
+              <img src="assets/images/Webwiz_patchplan41-70.png" class="img-fluid" alt="foto Patch plan" title="Patch plan">
+            </figure>
+            <figure>
+              <img src="assets/images/Webwiz_patchplan71-101.png" class="img-fluid" alt="foto Patch plan" title="Patch plan">
+              <figcaption class="h6 small mt-2">&copy; Patch plan</figcaption>
+            </figure>
+            <p>XLS bestand met een tabel die volgende info bevat: verbindingen tussen patchpanel poorten en switchpoorten, verbindingen tussen switchpoorten en netwerkinterfaces van actieve componenten in het rack, vrije switchpoorten en vrije patchpanel poorten.</p>
+          </article>
+
+          <article id="Aankooplijst">
+            <h3 class="fw-bold text-md-start text-center pt-5">Aankooplijst:</h3>
+            <h4 class="fw-bold text-md-start text-center pt-1">Overzicht Serverruimte:</h4>
+            <table class="table table-bordered text-center">
+              <caption>Totaal serverruimte: €15322.52</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Component </th>
+                  <th scope="col">Aantal</th>
+                  <th scope="col">Prijs per stuk <br> incl. btw </th>
+                  <th scope="col">Totaalprijs incl. <br> btw </th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <td>Rack </th>
+                  <td>1</td>
+                  <td>€284.19</td>
+                  <td>€284.19</td>
+                </tr>
+                <tr>
+                  <td>Power <br> distribution <br> device  </th>
+                  <td>1</td>
+                  <td>€38.99 </td>
+                  <td>€38.99 </td>
+                </tr>
+                <tr>
+                  <td>Voedingskabel  <br> C13</th>
+                  <td>6</td>
+                  <td>€6.09</td>
+                  <td>€36.54</td>
+                </tr>
+                <tr>
+                  <td>Core switch</th>
+                  <td>1</td>
+                  <td>€659.00</td>
+                  <td>€659.00</td>
+                </tr>
+                <tr>
+                  <td>Extra switch</th>
+                  <td>1</td>
+                  <td>€659.00</td>
+                  <td>€659.00</td>
+                </tr>
+                <tr>
+                  <td>Patch panel</th>
+                  <td>1</td>
+                  <td>€29.09</td>
+                  <td>€29.09</td>
+                </tr>
+                <tr>
+                  <td>Cat6 keystones</th>
+                  <td>12</td>
+                  <td>€3.39</td>
+                  <td>€40.68</td>
+                </tr>
+                <tr>
+                  <td>Router ISP</th>
+                  <td>1</td>
+                  <td>€469.00</td>
+                  <td>€469.00</td>
+                </tr>
+                <tr>
+                  <td>Server <br> Files/HDCP</th>
+                  <td>1</td>
+                  <td>€2573.97</td>
+                  <td>€2573.97</td>
+                </tr>
+                <tr>
+                  <td>Server VoIP</th>
+                  <td>1</td>
+                  <td>€2573.97</td>
+                  <td>€2573.97</td>
+                </tr>
+                <tr>
+                  <td>SATA HDD</th>
+                  <td>4</td>
+                  <td>€314.00</td>
+                  <td>€1256.00</td>
+                </tr>
+                <tr>
+                  <td>SAS SSD</th>
+                  <td>4</td>
+                  <td>€999.00</td>
+                  <td>€3996.00</td>
+                </tr>
+                <tr>
+                  <td>Rack mount kit</th>
+                  <td>3</td>
+                  <td>€49.00</td>
+                  <td>€147.00</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4 class="fw-bold text-md-start text-center pt-1">Overzicht Werkruimtes:</h4>
+            <table class="table table-bordered text-center">
+              <caption>Totaal werkruimtes: €3713.00</caption>
+              <caption>Totaal prijs van beide ruimtes = 15322.52 + 3720.78= €19043.3 incl. btw</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Component </th>
+                  <th scope="col">Aantal</th>
+                  <th scope="col">Prijs per stuk <br> incl. btw </th>
+                  <th scope="col">Totaalprijs incl. <br> btw </th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <td>Switches</th>
+                  <td>6</td>
+                  <td>€485.00</td>
+                  <td>€2910.00</td>
+                </tr>
+                <tr>
+                  <td>Cat6 patchkabels</th>
+                  <td>25</td>
+                  <td>€2.29</td>
+                  <td>€57.25</td>
+                </tr>
+                <tr>
+                  <td>Cat6 kabels op rol <br> (100m)</th>
+                  <td>11</td>
+                  <td>€36.09</td>
+                  <td>€396.99</td>
+                </tr>
+                <tr>
+                  <td>Cat6 versterker</th>
+                  <td>2</td>
+                  <td>€63.69</td>
+                  <td>€127.38</td>
+                </tr>
+                <tr>
+                  <td>RJ45 stekker</th>
+                  <td>100</td>
+                  <td>€0.63</td>
+                  <td>€63.00</td>
+                </tr>
+                <tr>
+                  <td>Klittenband (1m)</th>
+                  <td>3</td>
+                  <td>€11.07</td>
+                  <td>€33.21</td>
+                </tr>
+                <tr>
+                  <td>Spiraalslang (5m)</th>
+                  <td>1</td>
+                  <td>€12.09</td>
+                  <td>€12.09</td>
+                </tr>
+                <tr>
+                  <td>Network toolset</th>
+                  <td>1</td>
+                  <td>€30.09</td>
+                  <td>€30.09</td>
+                </tr>
+                <tr>
+                  <td>Handschoenen</th>
+                  <td>1</td>
+                  <td>€8.23</td>
+                  <td>€8.23</td>
+                </tr>
+                <tr>
+                  <td>Platte <br> schroevendraaier</th>
+                  <td>1 set</td>
+                  <td>€13.69</td>
+                  <td>€13.69</td>
+                </tr>
+                <tr>
+                  <td>Snoerloze <br> reciprozaag</th>
+                  <td>1</td>
+                  <td>€90.99</td>
+                  <td>€90.99</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>PDF document dat een aankooplijst bevat van al het materiaal nodig om het netwerk aan te leggen (kabel,
+            patchkabels, outlets, patchpanels, switchen, racks, cable management systemen, connectoren, transceiver
+            modules, gereedschap, ...)</p>
+          </article>
+        </section>
+      </main>
+
+
+      <aside class="col-md-3 pt-5">
+        <ul class="list-group">
+          <li class="nav-item py-1">
+            <a class="nav-link" href="#Opdracht">Opdracht</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="#Bekabelingsplan">Bekabelingsplan</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="#Rack Layout">Rack Layout</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="#Patch plan">Patch plan</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="#Aankooplijst">Aankooplijst</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+</div>   
+
+<footer class="container-fluid bg-light text-center h6 small p-4">&copy; <span id="year"></span> <span><a href="contact.html"> Contact </a> <a href="index.html#Over mij"> Seppe Wuytens </a> </span></footer>
+
+</body>
+</html>
+

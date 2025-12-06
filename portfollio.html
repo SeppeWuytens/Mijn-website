@@ -18,6 +18,9 @@
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- JavaScript-bestanden  -->
+  <script src="js/script.js" defer></script>
+
 </head>
 <body class="p-3 m-0 border-0 bd-example">
     <nav class="navbar  bg-white shadow-sm container-fluid">
@@ -36,7 +39,23 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="index.html#Over mij">Over mij</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" href="portfollio.html">My Portfolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="portfollio.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projecten
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-end" href="Project1.html">Webwiz</a></li>
+              <li><a class="dropdown-item text-end" href="Project2.html">Project 2</a></li>
+              <li><a class="dropdown-item text-end" href="Project3.html">Project 3</a></li>
+              <li><a class="dropdown-item text-end" href="Project4.html">Project 4</a></li>
+              <li><a class="dropdown-item text-end" href="Project5.html">Project 5</a></li>
+              <li><a class="dropdown-item text-end" href="Project6.html">Project 6</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -52,14 +71,14 @@
 
 <div class="container">
     <div class="row">
-        <main class="col-md-12">
+        <main class="col-md-9">
         <section id="portfollio" class="row">
           <article class="col-12 col-sm-6 col-md-6">
-            <h2 class="text-uppercase fs-9 fw-bolder pt-6">Project 1</h2>
-            <p class="h6 small">Bekabelen rack</p>
-            <a href="#" rel="noopener">
+            <h2 class="text-uppercase fs-9 fw-bolder pt-6">Webwiz</h2>
+            <p class="h6 small">Gestructureerd bekabelen</p>
+            <a href="Project1.html" rel="noopener">
               <figure>
-                <img src="assets/images/network-cabling-installation-7483084_1280.jpg" class="img-fluid" alt="foto Project 1"
+                <img src="assets/images/WebwizPlategrond.png" class="img-fluid" alt="foto Project 1"
                   title="leeg">
                 <figcaption class="h6 small mt-1">&copy; SW</figcaption>
               </figure>
@@ -67,9 +86,9 @@
           </article>
           <article class="col-12 col-sm-6 col-md-6">
             <h2 class="text-uppercase fs-9 fw-bolder pt-6">Project 2</h2>
-            <p class="h6 small">Software</p>
-            <a href="#" rel="noopener">
-              <figure><img src="assets/images/monitor-1307227_1280.jpg" class="img-fluid" alt="foto Project 2"
+            <p class="h6 small">Onder constructie</p>
+            <a href="Project2.html" rel="noopener">
+              <figure><img src="assets/images/Project.png" class="img-fluid" alt="foto Project 2"
                   title="leeg">
                 <figcaption class="h6 small mt-1">&copy; SW</figcaption>
               </figure>
@@ -77,9 +96,9 @@
           </article>
           <article class="col-12 col-sm-6 col-md-6">
             <h2 class="text-uppercase fs-9 fw-bolder pt-6">Project 3</h2>
-            <p class="h6 small">Configureren Switch</p>
-            <a href="#" rel="noopener">
-              <figure><img src="assets/images/networking-1626665_1280.jpg" class="img-fluid" alt="foto Project 3"
+            <p class="h6 small">Onder constructie</p>
+            <a href="Project3.html" rel="noopener">
+              <figure><img src="assets/images/Project.png" class="img-fluid" alt="foto Project 3"
                   title="leeg">
                 <figcaption class="h6 small mt-1">&copy; SW</figcaption>
               </figure>
@@ -87,8 +106,8 @@
           </article>
           <article class="col-12 col-sm-6 col-md-6">
             <h2 class="text-uppercase fs-9 fw-bolder pt-6">Project 4</h2>
-            <p class="h6 small">...</p>
-            <a href="#" rel="noopener">
+            <p class="h6 small">Onder constructie</p>
+            <a href="Project4.html" rel="noopener">
               <figure><img src="assets/images/Project.png" class="img-fluid" alt="foto Project 4"
                   title="leeg">
                 <figcaption class="h6 small mt-1">&copy; SW</figcaption>
@@ -97,8 +116,8 @@
           </article>
           <article class="col-12 col-sm-6 col-md-6">
             <h2 class="text-uppercase fs-9 fw-bolder pt-6">Project 5</h2>
-            <p class="h6 small">...</p>
-            <a href="#" rel="noopener">
+            <p class="h6 small">Onder constructie</p>
+            <a href="Project5.html" rel="noopener">
               <figure><img src="assets/images/Project.png" class="img-fluid" alt="foto Project 5"
                   title="leeg">
                 <figcaption class="h6 small mt-1">&copy; SW</figcaption>
@@ -107,8 +126,8 @@
           </article>
           <article class="col-12 col-sm-6 col-md-6">
             <h2 class="text-uppercase fs-9 fw-bolder pt-6">Project 6</h2>
-            <p class="h6 small">...</p>
-            <a href="#" rel="noopener">
+            <p class="h6 small">Onder constructie</p>
+            <a href="Project6.html" rel="noopener">
               <figure><img src="assets/images/Project.png" class="img-fluid" alt="foto Project 6"
                   title="leeg">
                 <figcaption class="h6 small mt-1">&copy; SW</figcaption>
@@ -117,10 +136,32 @@
           </article>
         </section>
       </main>
+      <aside class="col-md-3 pt-5 ps-5">
+        <ul>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="Project1.html">Webwiz</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="Project2.html">Project2</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="Project3.html">Project3</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="Project4.html">Project4</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="Project5.html">Project5</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="Project6.html">Project6</a>
+          </li>
+        </ul>
+      </aside>
     </div>
 </div>   
 
-<footer class="container-fluid bg-light text-start h6 small p-4">&copy;<a href="contact.html"> Contact </a></footer>
+<footer class="container-fluid bg-light text-center h6 small p-4">&copy; <span id="year"></span> <span><a href="contact.html"> Contact </a> <a href="index.html#Over mij"> Seppe Wuytens </a> </span></footer>
 
 </body>
 </html>
